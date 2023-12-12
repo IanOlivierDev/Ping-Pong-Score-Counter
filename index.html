@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Score Keeper</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <img src="Images/table-tennis-ping-pong.jpg" alt="">
+            <h2 id="header">Ping Pong Score Keeper</h2>
+            <div id="scoreZone">
+                <h2><span id="score1">0</span> : <span id="score2">0</span></h2>
+                <p>Use the buttons to keep score</p>
+                <span id="scoreTo">First to <input id="scoreToWin" type="number" min="1"></span>
+            </div>
+            <div id="buttons">
+                <button class="button" id="redBtn">+1 to Red Team</button>
+                <button class="button" id="blueBtn">+1 to Blue Team</button>
+                <button class="button" id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="winner">
+            <h3>Blue team is the winner!</h3>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
